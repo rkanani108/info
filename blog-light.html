@@ -77,7 +77,6 @@
                                 <li><a href="index.html#home"><span class="nav-menu-icon"><i class="lnr lnr-home"></i></span>Home </a> </li>
                                 <li><a href="index.html#about"><span class="nav-menu-icon"><i class="lnr lnr-user"></i></span>About Me</a></li>
                                 <li><a href="index.html#resume"><span class="nav-menu-icon"><i class="lnr lnr-license"></i></span>Resume</a></li>
-                                <li><a href="index.html#portfolio"><span class="nav-menu-icon"><i class="lnr lnr-briefcase"></i></span>Portfolio</a></li>
                                 <li><a href="index.html#blog" class="active"><span class="nav-menu-icon"><i class="lnr lnr-book"></i></span>Blog</a></li>
                                 <li><a href="index.html#contact"><span class="nav-menu-icon"><i class="lnr lnr-envelope"></i></span>Contact</a></li>
                             </ul>
@@ -110,6 +109,7 @@
                     <div class="blog-image">
                         <img src="img/blog/blog-page-img.jpg" alt="">
                     </div>
+					<div id="post"></div>
                     <div class="blog-container">
                         <div class="row">
 
@@ -122,6 +122,7 @@
                             <!--Blog Heading Start-->
 
                             <!--Blog Content Start-->
+							<div id="like_button_container"></div>
                             <div class="blog-content col-md-10 offset-md-1">
                                 <p>Consectetur rerum veniam vitae sequi voluptatibus unde soluta dolorum. Sint maxime ducimus tenetur vitae corrupti saepe. Veniam sit ea aliquid odit officiis. Quisquam at labore eum commodi in eius In quisquam a a eaque fuga? Debitis magnam deserunt libero voluptates esse at possimus? Voluptatum voluptates exercitationem voluptatum accusantium doloremque nihil, nihil molestias voluptatibus, minus nostrum, aliquid Quisquam neque fugiat quos veniam facere Dicta eaque laboriosam ut voluptas ipsum Officiis nisi maxime soluta optio ipsum quam Dolores aperiam explicabo sed quas unde laborum molestiae. Porro cum incidunt enim minus nisi excepturi rerum! Exercitationem quia excepturi reiciendis illum velit! Consequatur tempora nihil </p>
                                 <pre><code class="language-csharp">using System;
@@ -255,13 +256,24 @@ namespace HelloWorld
         <!--Plugins JS-->
         <script src="js/plugins.min.js"></script>
 		   <!--Site Main JS-->
-        <script src="js/prism.js"></script>
+        
 
 		
         <!--Site Main JS-->
         <script src="js/main.js"></script>
-
-    </body>
-
-<!-- Mirrored from watson-vcard.netlify.app/blog-light.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 12 Aug 2020 04:54:04 GMT -->
+<!-- Load React. -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- Load our React component. -->
+    <script  src="service/index.js"></script>
+    <script id="first" type="text/babel" src="component/like_button.js"></script>
+    <script>
+             setTimeout(function() {
+                $("body").append('<script src="js/prism.js" type="text/javascript"/>');
+}, 2000);
+            
+         </script>
+      </body>
 </html>
