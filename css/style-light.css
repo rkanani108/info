@@ -457,8 +457,7 @@ a:focus {
     .progress .progress-bar:after {
       content: "";
       display: block;
-      border: 15px solid transparent;
-      border-bottom: 21px solid transparent;
+    
       position: absolute;
       top: -26px;
       right: -12px;
