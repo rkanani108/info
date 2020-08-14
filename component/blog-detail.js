@@ -50,7 +50,7 @@ console.log(this.state.items);
             <img src="img/blog/blog-page-img.jpg" alt=""/>
         </div>
         <div className="blog-container">
-                        <div class="row">
+                        <div className="row">
 
                           
                             <div className="blog-heading col-md-8 offset-md-2">
@@ -93,15 +93,15 @@ console.log(this.state.items);
                                       <div className="col-md-6 mb-50">
                                           <span className="input">
                                               <input className="input__field" type="text" id="name" name="name" required/>
-                                              <label className="input__label" for="name">Name</label>
+                                              <label className="input__label" htmlFor ="name">Name</label>
                                           </span>
                                       </div>
 
                                     
                                       <div className="col-md-6 mb-50">
-                                          <span class="input">
+                                          <span className="input">
                                               <input className="input__field" type="text" id="email" name="email" required/>
-                                              <label className="input__label" for="email">Email</label>
+                                              <label className="input__label" htmlFor ="email">Email</label>
                                           </span>
                                       </div>
 
@@ -109,12 +109,12 @@ console.log(this.state.items);
                                       <div className="col-md-12 mb-30">
                                           <span className="input">
                                               <textarea  className="input__field" id="message" name="message" rows="5" required></textarea>
-                                              <label class="input__label" for="message">Your Comment</label>
+                                              <label className="input__label" htmlFor ="message">Your Comment</label>
                                           </span>
                                       </div>
 
                                     
-                                      <div clclassNameass="col-md-12">
+                                      <div className="col-md-12">
                                           <button className="btn-main">Post Comment</button>
                                       </div>
 
