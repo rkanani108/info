@@ -55,6 +55,7 @@ function parsePost(response) {
     return {
         id: response.id,
         title: response.data.title.iv,
+        description: response.data.description.iv,
         text: response.data.text.iv,
         slug: response.data.slug.iv
     };
@@ -64,6 +65,7 @@ function parsePage(response) {
     return {
         id: response.id,
         title: response.data.title.iv,
+        description: response.data.description.iv,
         text: response.data.text.iv,
         slug: response.data.slug.iv
     };
