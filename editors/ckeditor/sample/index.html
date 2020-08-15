@@ -23,7 +23,19 @@
 	<script src="../build/ckeditor.js"></script>
 	<script>ClassicEditor
 			.create( document.querySelector( '.editor' ), {
+				codeBlock: {
+            languages: [
+			 language-cs
+			    { language: 'language-powershell', label: 'Powershell' },
+                { language: 'language-css', label: 'CSS' },
+                { language: 'language-cs', label: 'C#' },
+				{ language: 'language-xml', label: 'XML' },
+				{ language: 'language-html', label: 'Html' },
+				{ language: 'language-javascript', label: 'Javascript' }
 				
+
+            ]
+        },
 				toolbar: {
 					items: [
 						'heading',
