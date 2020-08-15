@@ -35,14 +35,23 @@ function clearBearerToken() {
     return parsePage(items[0]);
 }
 
- async function getPosts() {
-    const json = await getContent(`api/content/${CONFIG.appName}/posts`);
+ async function getPosts(take=3,skip=0) {
+     const filter="?$top="+take+"&$skip="+skip;
+    
+     
+    const json = await getContent(`api/content/${CONFIG.appName}/posts`+filter);
 
     const { total, items } = json;
 
     return { total, posts: items.map(x => parsePost(x)) };
 }
+async function getCategories() {
+    const json = await getContent(`api/content/${CONFIG.appName}/categories`);
 
+    const { total, items } = json;
+
+    return { total, categories: items.map(x => parseCategory(x)) };
+}
  async function getPages() {
     const json = await getContent(`api/content/${CONFIG.appName}/pages`);
 
@@ -51,13 +60,23 @@ function clearBearerToken() {
     return { total, pages: items.map(x => parsePage(x)) };
 }
 
+function parseCategory(response) {
+    return {
+      
+        title: response.data.category.iv,
+       
+    };
+}
+
+
 function parsePost(response) {
     return {
         id: response.id,
         title: response.data.title.iv,
         description: response.data.description.iv,
         text: response.data.text.iv,
-        slug: response.data.slug.iv
+        slug: response.data.slug.iv,
+        category: response.data.Category.iv
     };
 }
 

@@ -10,7 +10,8 @@ class BlogList extends React.Component {
     }
   
     async componentDidMount() {
-      console.log("Did mount called");
+      let take=new URLSearchParams(window.location.search).get("take");
+      let skip=new URLSearchParams(window.location.search).get("skip");
       await getPosts().then(result => {console.log(result); this.setState({items:result.posts})});
       
      

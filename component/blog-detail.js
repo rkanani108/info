@@ -11,7 +11,7 @@ class BlogDetail extends React.Component {
 
   async componentDidMount() {
    let id=new URLSearchParams(window.location.search).get("id");
-   let slug=new URLSearchParams(window.location.search).get("slug")
+   let slug=new URLSearchParams(window.location.search).get("slug");
    // console.log("slug:"+new URLSearchParams(this.props.location.search).get("slug"));
     console.log("Did mount called");
     await getPost(id).then(result => {console.log(result); this.setState({item:result})});
@@ -133,5 +133,5 @@ console.log(this.state.items);
   }
 
 
-const domContainer = document.querySelector('#blog-detail');
-ReactDOM.render(<BlogDetail />, domContainer);
+const domContainerDetail = document.querySelector('#blog-detail');
+ReactDOM.render(<BlogDetail />, domContainerDetail);
