@@ -61,7 +61,7 @@ console.log(this.state.items);
 
 
                             <div className="blog-content col-md-10 offset-md-1">
-                            <span dangerouslySetInnerHTML={{__html: this.state.item.text}} />
+                            <div dangerouslySetInnerHTML={{__html: this.state.item.text}} />
                             </div>
 
                             <div className="blog-comments col-md-8 offset-md-2">
