@@ -6,8 +6,8 @@
 
     <!-- Load the editor sdk from the local folder or https://cloud.squidex.io/scripts/editor-sdk.js -->
     <script src="https://cloud.squidex.io/scripts/editor-sdk.js"></script>
-    <script src="https://cdn.ckeditor.com/ckeditor5/10.0.0/classic/ckeditor.js"></script>
 
+    <script src="https://cdn.ckeditor.com/ckeditor5/21.0.0/classic/ckeditor.js"></script>
     <style>
         .ck-editor__editable {
             min-height: 250px;
@@ -16,17 +16,23 @@
 </head>
 
 <body>
-    <textarea name="content" id="editor"></textarea>
+   <div id="editor"></div>
 
     <script>
         var element = document.getElementById('editor');
 
-        ClassicEditor
-            .create(element)
+			
+			
+      ClassicEditor
+            .create(element,{
+			 plugins: [ Essentials, Paragraph, Bold, Italic ]
+			})
             .catch(error => {
                 console.error(error);
             })
             .then(editor => {
+			
+			
                 // When the field is instantiated it notified the UI that it has been loaded.
                 var field = new SquidexFormField();
 
@@ -56,7 +62,9 @@
                     }
                 });
             });
-    </script>
+    
+	
+	</script>
 </body>
 
 </html>
