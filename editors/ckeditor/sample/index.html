@@ -74,9 +74,7 @@
 			} )
 			.then( editor => {
 				window.editor = editor;
-		editor.editing.view.change( writer => {
-    writer.setStyle( 'height', '600px', editor.editing.view.document.getRoot() );
-} );
+		
 				 // When the field is instantiated it notified the UI that it has been loaded.
                 var field = new SquidexFormField();
 
@@ -107,7 +105,9 @@
                 });
 				
 				
-		
+		editor.editing.view.change( writer => {
+    writer.setStyle( 'height', '600px', editor.editing.view.document.getRoot() );
+} );
 				
 				
 				
