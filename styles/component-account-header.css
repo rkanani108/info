@@ -1,0 +1,14 @@
+/* breakpoints */
+.account-header {
+  margin: 10px 0;
+}
+
+.account-header a img {
+  max-width: 114px;
+}
+
+@media (min-width: 960px) {
+  .account-header a img {
+    max-width: 143px;
+  }
+}

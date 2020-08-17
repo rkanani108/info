@@ -1,0 +1,58 @@
+/* breakpoints */
+.social-share {
+  background: transparent;
+}
+
+.social-share ul {
+  margin: 0 auto;
+  display: table;
+  width: auto;
+  overflow: hidden;
+}
+
+.social-share.daily-briefing ul {
+  margin: 0 0 0 auto;
+}
+
+.social-share li {
+  float: left;
+  margin: 0 11px;
+}
+
+.social-share li:first-child {
+  margin-left: 0;
+}
+
+.social-share li .fb_iframe_widget {
+  display: block;
+  margin-top: -2px;
+}
+
+.social-share li a {
+  font-family: "FontAwesome";
+  content: 'Facebook';
+  color: #333F48;
+  background-color: #FFFFFF;
+  padding: 25%;
+  font-size: 16px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.social-share li a:hover {
+  text-decoration: none;
+}
+
+.social-share li a[href*="linkedin"], .social-share li a[href*="facebook"] {
+  padding-left: 30%;
+}
+
+.social-share li p {
+  height: 32px;
+  line-height: 33px;
+  margin-bottom: 0;
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333F48;
+}

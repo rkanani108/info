@@ -1,0 +1,64 @@
+/* breakpoints */
+.callout-sidebar__container {
+  border-bottom: 1px solid #B2B4B2;
+  padding-bottom: 7px;
+}
+
+.callout-sidebar__headline {
+  border-top: 4px solid #C8102E;
+  border-bottom: 1px solid #B2B4B2;
+  color: #333F48;
+  font-family: benton-sans-condensed, sans-serif;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 19px;
+  padding-bottom: 5px;
+  padding-left: 7px;
+  margin-bottom: 15px;
+}
+
+.callout-sidebar__caption {
+  font-family: benton-sans, sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.33px;
+  color: #5C656D;
+  padding-left: 7px;
+  margin-top: 8px;
+  padding-bottom: 5px;
+}
+
+.callout-sidebar__cta a {
+  color: #333F48;
+  font-family: benton-sans-condensed, sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 600;
+  letter-spacing: 0.33px;
+  position: relative;
+  padding-left: 7px;
+}
+
+.callout-sidebar__cta a[data-linktype='download']:before {
+  color: #333F48;
+  content: url("../images/download-arrow.svg");
+  font-size: 6px;
+  padding: 8px 6px 4px 6px;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  background-color: #B4FBF6;
+  border-radius: 50%;
+}
+
+.callout-sidebar__cta a:hover {
+  color: #333F48;
+  text-decoration: none;
+}
+
+.callout-sidebar img {
+  max-width: 100%;
+  height: auto;
+}

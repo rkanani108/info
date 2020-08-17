@@ -34,12 +34,13 @@ class BlogList extends React.Component {
 <div className="blog-content"  key={item.id}>
     <span className="cat">Web Design</span>
     <a href={"blog-light.html?id="+item.id+"&slug="+item.slug} ><h2 className="blog-title">{item.title}</h2></a>
-    <p className="mt-20 mb-30" dangerouslySetInnerHTML={{__html: item.text }} />
-    <div className="blog-date cat">August 15, 2018</div>
+    <p className="mt-20 mb-20" dangerouslySetInnerHTML={{__html: item.text }} />
+    <div className="blog-date">August 15, 2018</div>
         <div className="resume-button mt-10">
             <a className="btn-main" href={"blog-light.html?id="+item.id+"&slug="+item.slug}>Read more...</a>
         </div>
-    <hr className="mt-35 mb-30"/>
+        <span className="topic-container mt-30 mb-30">&nbsp;</span>
+   
 </div>
 ));
     }

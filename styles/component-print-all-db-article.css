@@ -1,0 +1,52 @@
+/* breakpoints */
+.printAll__Wrapper {
+  display: inline-block;
+}
+
+.printAll__Wrapper-content {
+  text-decoration: none;
+  width: auto;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  position: relative;
+  padding-left: 39px;
+  line-height: 16px;
+}
+
+.printAll__Wrapper-content:before {
+  content: "";
+  background-image: url("../images/print-icon.svg");
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position: center center;
+  background-color: #FFFFFF;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 7px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.printAll__Wrapper-content p {
+  font-family: benton-sans-condensed, sans-serif;
+  color: #333F48;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.39px;
+  line-height: 24px;
+  margin-bottom: 0;
+  display: inline-block;
+}
+
+@media (max-width: 991px) {
+  .printAll__Wrapper-content p {
+    line-height: 16px;
+  }
+}

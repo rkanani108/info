@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="14px" viewBox="0 0 16 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 62 (101010) - https://sketch.com -->
+    <title>6E85292B-92DC-4D13-B2C7-EE1C8293367F</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 16 0 16 14 0 14"></polygon>
+    </defs>
+    <g id="Asset-Artboard-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Navigation-Copy-Navigation---Logged-In" transform="translate(-1218.000000, -6.000000)">
+            <g id="Group-3" transform="translate(1218.000000, 6.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M8,10.534186 C6.28953079,10.534186 4.90302945,9.10395349 4.90302945,7.33953488 C4.90302945,5.57511628 6.28953079,4.14465116 8,4.14465116 C9.71046921,4.14465116 11.0969706,5.57511628 11.0969706,7.33953488 C11.0969706,9.10395349 9.71046921,10.534186 8,10.534186 M8,0 C3.5816824,0 0,3.69465116 0,8.25209302 C0,10.4876744 0.863012541,12.5139535 2.26213893,14 C3.91850077,12.9044186 5.88643089,12.2665116 8,12.2665116 C10.1135691,12.2665116 12.0814992,12.9044186 13.7376356,14 C15.1369875,12.5139535 16,10.4876744 16,8.25209302 C16,3.69465116 12.4183176,0 8,0" id="Fill-1" fill="#C8102E" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

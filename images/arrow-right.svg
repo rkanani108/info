@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="13px" viewBox="0 0 12 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>Right_Arrow_Icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Batch-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Cheat-Sheet" transform="translate(-964.000000, -3319.000000)" stroke="#333F48">
+            <g id="Right_Arrow_Icon" transform="translate(964.000000, 3319.000000)">
+                <g id="Group-7" transform="translate(6.000000, 6.000000) rotate(-90.000000) translate(-6.000000, -6.000000) ">
+                    <line x1="5.73239333" y1="9.33333333e-05" x2="5.73239333" y2="10.6792933" id="Stroke-3" stroke-width="1.5"></line>
+                    <polyline id="Stroke-5" stroke-width="1.5" points="11.1350867 5.33941333 5.73248667 10.7420133 0.330353333 5.33941333"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

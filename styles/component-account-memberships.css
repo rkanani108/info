@@ -1,0 +1,41 @@
+/* breakpoints */
+.account-memberships {
+  font-family: benton-modern-display, serif;
+  color: #333F48;
+  text-align: center;
+  margin-bottom: 70px;
+  border-top: 1px solid #B2B4B2;
+}
+
+.account-memberships .title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 44px;
+  text-transform: capitalize;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.account-memberships .card {
+  border-radius: 0;
+  border: 1px solid #E9EEF2;
+  text-align: left;
+}
+
+.account-memberships .card h5 {
+  font-weight: 600;
+  margin-bottom: 0px;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.account-memberships .cta {
+  background-color: #333F48;
+  color: #FFFFFF;
+  font-family: benton-sans-condensed, sans-serif;
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 14px;
+}

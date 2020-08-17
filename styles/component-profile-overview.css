@@ -1,0 +1,40 @@
+/*
+ * ADVBRD-1375 Profile overview text
+ *
+ *
+ */
+/* breakpoints */
+.profile-overview__container {
+  margin-top: -18px;
+}
+
+@media (max-width: 991px) {
+  .profile-overview__container {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+.profile-overview__container h4 {
+  color: #333F48;
+  font-family: benton-modern-display, serif;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 44px;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 991px) {
+  .profile-overview__container h4 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
+
+.profile-overview__container p {
+  color: #5C656D;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 24px;
+}

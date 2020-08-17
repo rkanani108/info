@@ -1,0 +1,82 @@
+/* breakpoints */
+.account-navigation__wrapper {
+  background-color: #F4F6F8;
+  padding: 30px 24px;
+  word-wrap: break-word;
+}
+
+.account-navigation__wrapper a {
+  font-weight: 300;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.account-navigation__wrapper a:hover {
+  color: #C8102E;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.account-navigation__wrapper a.active {
+  color: #C8102E;
+  font-weight: 600;
+}
+
+.account-navigation__wrapper a:last-of-type {
+  margin-bottom: initial;
+}
+
+.account-navigation__wrapper .account-nav {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  font-family: benton-sans-condensed, sans-serif;
+  color: #C8102E;
+  position: relative;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.account-navigation__wrapper .account-nav:after {
+  content: "\f0d7";
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #333F48;
+  padding-left: 6px;
+}
+
+@media (min-width: 992px) {
+  .account-navigation__wrapper .account-nav {
+    display: none;
+  }
+}
+
+.account-navigation__wrapper .account-nav.active:after {
+  content: "\f0d8";
+}
+
+@media (max-width: 991px) {
+  .account-navigation__wrapper .account-nav-content {
+    display: none;
+  }
+  .account-navigation__wrapper .account-nav.active + .account-nav-content {
+    display: block;
+  }
+  .account-navigation__wrapper .account-nav-content a.active {
+    display: none;
+  }
+}
+
+.account-navigation__username {
+  font-family: benton-modern-display, serif;
+  font-size: 24px;
+  line-height: 28px;
+  border-bottom: 1px solid #B2B4B2;
+  color: #333F48;
+  margin-bottom: 18px;
+  padding-bottom: 18px;
+}

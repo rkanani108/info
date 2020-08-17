@@ -1,0 +1,446 @@
+/*
+ * ADVBRD-1321 Account Subscriptions
+ *
+ *
+ */
+.subscribe-dot-flashing {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 24px;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #b4fbf6;
+  color: #b4fbf6;
+  -webkit-animation: dotFlashing 1s infinite linear alternate;
+  animation: dotFlashing 1s infinite linear alternate;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+@media only screen and (min-width: 992px) {
+  .subscribe-dot-flashing {
+    top: 50%;
+    right: 30px;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
+
+.subscribe-dot-flashing::before, .subscribe-dot-flashing::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+}
+
+.subscribe-dot-flashing::before {
+  left: -12px;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #b4fbf6;
+  color: #b4fbf6;
+  -webkit-animation: dotFlashing 1s infinite alternate;
+  animation: dotFlashing 1s infinite alternate;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.subscribe-dot-flashing::after {
+  left: 12px;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #b4fbf6;
+  color: #b4fbf6;
+  -webkit-animation: dotFlashing 1s infinite alternate;
+  animation: dotFlashing 1s infinite alternate;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+@-webkit-keyframes dotFlashing {
+  0% {
+    background-color: #b4fbf6;
+  }
+  50%,
+  100% {
+    background-color: white;
+  }
+}
+
+@keyframes dotFlashing {
+  0% {
+    background-color: #b4fbf6;
+  }
+  50%,
+  100% {
+    background-color: white;
+  }
+}
+
+.account-subscriptions__wrapper {
+  border-top: 1px solid #B2B4B2;
+  padding-top: 22px;
+  margin-top: 44px;
+}
+
+.account-subscriptions__heading {
+  color: #333F48;
+  font-size: 40px;
+  font-family: benton-modern-display, serif;
+  font-weight: 600;
+  line-height: 43px;
+  text-align: center;
+  padding-bottom: 24px;
+}
+
+@media only screen and (max-width: 991px) {
+  .account-subscriptions__heading {
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
+
+.account-subscriptions__content {
+  color: #5C656D;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  padding: 0px 20px 26px 20px;
+}
+
+@media only screen and (max-width: 991px) {
+  .account-subscriptions__content {
+    margin-top: -20px;
+  }
+}
+
+.account-subscriptions__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media only screen and (max-width: 991px) {
+  .account-subscriptions__item {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
+.account-subscriptions__item-innerwrapper {
+  border: 1px solid #E9EEF2;
+  margin-bottom: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 194px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .account-subscriptions__item-innerwrapper {
+    margin-left: 23px;
+    margin-right: 23px;
+  }
+}
+
+.account-subscriptions__item-heading {
+  font-family: benton-modern-display, serif;
+  color: #333F48;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  padding-left: 24px;
+  padding-top: 24px;
+  padding-right: 24px;
+}
+
+.account-subscriptions__item-content {
+  color: #5C656D;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 14px;
+  line-height: 22px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 0px;
+  flex: 1 0 0;
+}
+
+.account-subscriptions__item-content-cta > a {
+  font-family: benton-sans-condensed, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #333f48;
+  padding-left: 24px;
+  padding-bottom: 15px;
+  display: inline-block;
+}
+
+.account-subscriptions__item-content-cta > a:hover {
+  color: #333f48;
+}
+
+.account-subscriptions__item-content-cta > a:after {
+  color: #333f48;
+  content: url(../images/right-arrow.svg);
+  font-size: 6px;
+  padding: 6px 6px 4px 6px;
+  margin-left: 8px;
+  background-color: #b4fbf6;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.account-subscriptions__item-subscribe {
+  background-color: #333F48;
+  height: 44px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.account-subscriptions__item-subscribe:hover {
+  background-color: #5CFFAF;
+  color: #333F48;
+}
+
+.account-subscriptions__item .error-subscribe {
+  border: 1px solid #C8102E;
+  color: #C8102E;
+  font-size: 10px;
+  line-height: 14px;
+  font-family: benton-sans,sans-serif;
+  position: relative;
+  padding-left: 57px;
+  background-color: #ffffff;
+  cursor: unset;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  height: auto;
+  padding: 10px 10px 10px 57px;
+}
+
+.account-subscriptions__item .error-subscribe p {
+  margin-bottom: 5px;
+}
+
+.account-subscriptions__item .error-subscribe p:last-child {
+  margin-bottom: 0;
+}
+
+.account-subscriptions__item .error-subscribe .error {
+  position: absolute;
+  width: 16px;
+  height: 14px;
+  top: 11px;
+  left: 12px;
+  background: url(../images/icon-error.svg) no-repeat;
+  background-size: 16px 14px;
+  z-index: 999;
+}
+
+.account-subscriptions__item .error-subscribe:before {
+  content: "";
+  width: 42px;
+  background-color: #C8102E;
+  height: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: none;
+  margin-top: 0;
+  z-index: 999;
+  border-radius: 0;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+}
+
+.account-subscriptions__item .error-subscribe a {
+  color: #333F48;
+  text-decoration: underline;
+}
+
+.account-subscriptions__item .error-subscribe .external-link {
+  position: relative;
+  padding-right: 14px;
+  display: inline-block;
+}
+
+.account-subscriptions__item .error-subscribe .external-link:after {
+  position: absolute;
+  content: '';
+  background: url(../images/icon-ext-link.svg) no-repeat;
+  background-size: 9px 14px;
+  display: inline-block;
+  margin-left: 3px;
+  right: 0;
+  width: 9px;
+  height: 14px;
+}
+
+.account-subscriptions__item-subscribe {
+  color: #FFFFFF;
+  font-family: benton-sans-condensed, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  position: relative;
+  padding-left: 43px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.account-subscriptions__item-subscribe:before {
+  position: absolute;
+  color: black;
+  content: "";
+  background: url("../images/plus.svg") no-repeat;
+  background-size: 7px 7px;
+  background-position: center center;
+  font-family: "benton-sans-condensed";
+  font-size: 16px;
+  font-weight: bold;
+  height: 16px;
+  width: 16px;
+  padding: 0 0 0 1px;
+  background-color: #b4fbf6;
+  border-radius: 100%;
+  vertical-align: middle;
+  left: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin-top: -2px;
+}
+
+.account-subscriptions__item-subscribe.unsubscribe {
+  background-color: #5CFFAF;
+  color: #333F48;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  cursor: unset;
+}
+
+.account-subscriptions__item-subscribe.unsubscribe:before {
+  background: url(../images/check.svg) no-repeat;
+  width: 15px;
+  height: 10px;
+  background-size: 15px 10px;
+  left: 22px;
+}
+
+.account-subscriptions__item-subscribe .removeLk {
+  max-width: 120px;
+  background-color: #333F48;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.account-subscriptions__item-subscribe .removeLk:hover {
+  text-decoration: none;
+}
+
+.account-subscriptions__item-subscribe .removeLk:after {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  color: white;
+  content: "";
+  background: url("../images/x.svg") no-repeat;
+  background-size: 8px 8px;
+  background-position: center center;
+  font-size: 12px;
+  padding: 6px 6px 4px 6px;
+  margin-left: 11px;
+  background-color: transparent;
+  border-radius: 0;
+  vertical-align: middle;
+}
+
+.account-subscriptions__item-subscribe.subscribing, .account-subscriptions__item-subscribe.canceling {
+  padding-left: 20px;
+}
+
+.account-subscriptions__item-subscribe.subscribing:before, .account-subscriptions__item-subscribe.canceling:before {
+  display: none;
+}
+
+/*
+ * ADVBRD-1322 Unsubscribe All Button
+ *
+ *
+ */
+.unsubscribe-all__cta {
+  text-align: center;
+  padding-top: 38px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 991px) {
+  .unsubscribe-all__cta {
+    padding-top: 30px;
+  }
+}
+
+.unsubscribe-all__cta a {
+  font-family: benton-sans, sans-serif;
+  color: #333F48;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  border: 2px solid #333F48;
+  border-radius: 20px;
+  padding: 4px 14px 2px;
+  display: inline-block;
+}
+
+.unsubscribe-all__cta a:hover {
+  text-decoration: none;
+  background-color: #333F48;
+  color: #ffffff;
+}
+
+.unsubscribe-all__cta.top-border {
+  border-top: 1px solid #B2B4B2;
+  margin-top: 8px;
+}

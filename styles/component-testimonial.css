@@ -1,0 +1,113 @@
+/* breakpoints */
+.testimonial {
+  background-color: #C8102E;
+  padding: 0px 62px 30px 62px;
+  position: relative;
+}
+
+@media (min-width: 992px) {
+  .testimonial {
+    padding: 120px 100px;
+  }
+  .testimonial:before {
+    content: '';
+    width: 36.6%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    left: 33.4%;
+    -webkit-transform: skewX(33.4deg);
+    -ms-transform: skewX(33.4deg);
+    transform: skewX(33.4deg);
+  }
+}
+
+.testimonial .component-content {
+  color: #FFFFFF;
+  font-family: benton-modern-display, serif;
+  font-style: normal;
+}
+
+.testimonial .component-content .testimonial-quote-mark {
+  height: 120px;
+  font-size: 300px;
+  text-align: left;
+  line-height: .85;
+  position: relative;
+  left: -15px;
+}
+
+@media (min-width: 786px) {
+  .testimonial .component-content .testimonial-quote-mark {
+    top: -30px;
+    height: 0;
+    font-size: 500px;
+    text-align: right;
+    padding-right: 0px;
+  }
+}
+
+.testimonial .component-content .field-testimonial {
+  font-size: 50px;
+  font-weight: 600;
+  vertical-align: bottom;
+  line-height: 50px;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 786px) {
+  .testimonial .component-content .field-testimonial {
+    min-height: 150px;
+  }
+}
+
+.testimonial .component-content .field-first-name, .testimonial .component-content .field-last-name, .testimonial .component-content .field-source-line-1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.testimonial .component-content .field-last-name {
+  margin-left: .2em;
+}
+
+.testimonial .component-content .field-expert-title, .testimonial .component-content .field-source-line-2 {
+  font-family: benton-sans-condensed, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
+
+.testimonial .component-content .field-expert-info {
+  margin-bottom: 10px;
+  line-height: 22px;
+}
+
+@media (min-width: 786px) {
+  .testimonial .component-content .field-expert-info {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 786px) {
+  .testimonial .component-content .field-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.testimonial .component-content .field-image img {
+  border-radius: 50%;
+}
+
+@media (min-width: 786px) {
+  .testimonial .component-content .field-image img {
+    position: absolute;
+    right: 15px;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    float: right;
+  }
+}

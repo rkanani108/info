@@ -1,0 +1,108 @@
+/*
+ * ADVBRD-1373 Account Topic
+ *
+ *
+ */
+/* breakpoints */
+.account-topics {
+  margin-left: 16.666667%;
+  margin-right: 16.666667%;
+}
+
+@media (max-width: 991px) {
+  .account-topics {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+}
+
+.account-topics label {
+  height: 32px;
+  margin-bottom: 8px;
+  display: inline-block;
+  margin-right: 4px;
+}
+
+.account-topics label input {
+  display: none;
+}
+
+.account-topics label input:checked ~ span {
+  border-radius: 2px;
+  background-color: #333F48;
+  color: #FFFFFF;
+}
+
+.account-topics label span {
+  border-radius: 2px;
+  background-color: #F4F6F8;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  /* Konqueror */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                            not supported by any browser */
+  padding: 9px 10px;
+  border-radius: 2px;
+  color: #5C656D;
+  font-family: benton-sans-condensed, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+@media (min-width: 992px) {
+  .account-topics label span:hover {
+    background-color: #333F48;
+    color: #FFFFFF;
+    -webkit-transition: 0.2s linear;
+    transition: 0.2s linear;
+  }
+}
+
+.account-topics a, .account-topics__btn {
+  border: 2px solid #333F48;
+  border-radius: 20px;
+  color: #333F48;
+  font-family: benton-sans, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  display: inline-block;
+  padding: 2px 15px 2px;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  margin-bottom: 30px;
+  margin-top: 11px;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+.account-topics a:not(.disabled):hover, .account-topics__btn:not(.disabled):hover {
+  background-color: #333F48;
+  color: #FFFFFF;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+.account-topics a:hover, .account-topics__btn:hover {
+  text-decoration: none;
+  color: #333F48;
+}
+
+.account-topics a.disabled, .account-topics__btn.disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}

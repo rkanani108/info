@@ -1,0 +1,29 @@
+/* breakpoints */
+.sources-wrapper {
+  margin-bottom: 28px;
+}
+
+.sources-wrapper .sources-title {
+  color: #333F48;
+  font-family: benton-sans-condensed, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+.sources-wrapper .sources-content, .sources-wrapper .sources-content p {
+  color: #333F48;
+  font-family: Helvetica, "Open Sans";
+  font-size: 10px;
+  line-height: 18px;
+}
+
+.sources-wrapper .sources-content p {
+  margin-bottom: 18px;
+}
+
+.sources-wrapper .sources-content p:last-child {
+  margin-bottom: 0px;
+}

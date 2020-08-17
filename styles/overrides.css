@@ -1,0 +1,45 @@
+/*
+ * Override CSS
+ *
+ *
+ */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 992px) {
+  [class*="col-"] {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+}
+
+.container, .container-fluid {
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
+@media (max-width: 991px) {
+  .container, .container-fluid {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+.row, .container > .component-content > .row {
+  margin-right: -12px;
+  margin-left: -12px;
+}
+
+@media (max-width: 991px) {
+  .row, .container > .component-content > .row {
+    margin-right: -30px;
+    margin-left: -30px;
+  }
+}
+
+.container-clean-background {
+  padding: 0px;
+}

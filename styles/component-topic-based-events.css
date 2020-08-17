@@ -1,0 +1,162 @@
+/* breakpoints */
+.topic-based-events {
+  margin-bottom: 60px;
+}
+
+.topic-based-events .topic-based-events-layout {
+  padding: 0 15px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.topic-based-events .topic-based-events-layout:hover .topic-based-events-frame,
+.topic-based-events .topic-based-events-layout:hover .topic-based-events-footer {
+  border-color: #333F48;
+}
+
+.topic-based-events .topic-based-events-layout:hover .topic-based-events-title {
+  background-size: 100% 1px;
+  background-position: 0 100%;
+  text-decoration: none;
+}
+
+.topic-based-events .content-type {
+  margin-top: 6px;
+  margin-bottom: 8px;
+}
+
+@media only screen and (min-width: 992px) {
+  .topic-based-events .content-type {
+    margin-bottom: 20px;
+  }
+}
+
+.topic-based-events .topic-based-events-footer {
+  background-color: #f5f6f8;
+  padding: 0 15px 15px 15px;
+  border: 1px solid #e9eef2;
+  border-top: none;
+}
+
+@media only screen and (min-width: 992px) {
+  .topic-based-events .topic-based-events-footer {
+    padding-left: -webkit-calc(25% + 15px);
+    padding-left: calc(25% + 15px);
+  }
+}
+
+.topic-based-events .topic-based-events-frame {
+  padding: 15px 0;
+  background-color: #f5f6f8;
+  border: 1px solid #e9eef2;
+  border-bottom: none;
+}
+
+@media only screen and (min-width: 992px) {
+  .topic-based-events .topic-based-events-frame {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .topic-based-events .topic-based-events-frame__date {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .topic-based-events .topic-based-events-frame__date {
+    padding-left: 15px;
+    padding-right: 0;
+  }
+}
+
+.topic-based-events .topic-based-events-frame__description {
+  padding: 0 15px;
+}
+
+@media only screen and (min-width: 992px) {
+  .topic-based-events .topic-based-events-frame__description {
+    padding-right: 15px;
+  }
+}
+
+.topic-based-events .topic-based-events-title {
+  color: #333f48 !important;
+  font-family: "benton-modern-display";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  margin: 0 0 20px 0;
+  display: inline;
+  position: relative;
+  text-decoration: none;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(currentColor), to(currentColor));
+  background-image: -webkit-linear-gradient(currentColor, currentColor);
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 1px;
+  -webkit-transition: background-size 0.3s;
+  transition: background-size 0.3s;
+}
+
+.topic-based-events .event-date-wrapper {
+  border: 1px solid #e9eef2;
+  max-width: 80px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 992px) {
+  .topic-based-events .event-date-wrapper {
+    max-width: 100%;
+    margin-bottom: 0;
+  }
+}
+
+.topic-based-events .event-date-wrapper .event-date-month {
+  text-transform: uppercase;
+  background-color: #c8102e;
+  color: white;
+  font-family: "benton-sans-condensed";
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+}
+
+.topic-based-events .event-date-wrapper .event-date-day {
+  background-color: white;
+  font-family: "benton-modern-display";
+  font-size: 36px;
+  line-height: 39px;
+  font-weight: 600;
+  color: #333f48;
+  padding-top: 6px;
+}
+
+.topic-based-events .event-date-wrapper .event-date-year {
+  background-color: white;
+  font-family: "benton-sans-condensed";
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #333f48;
+  padding-bottom: 4px;
+}

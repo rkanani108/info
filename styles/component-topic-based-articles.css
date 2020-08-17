@@ -1,0 +1,69 @@
+@charset "UTF-8";
+/* breakpoints */
+.topic-based-articles {
+  margin-bottom: 60px;
+}
+
+.topic-based-articles .card {
+  border: none;
+  -webkit-transition: box-shadow .2s ease-in-out;
+  transition: box-shadow .2s ease-in-out;
+}
+
+.topic-based-articles .card:hover .card-title {
+  background-size: 100% 1px;
+  background-position: 0 100%;
+  text-decoration: none;
+}
+
+.topic-based-articles .card:hover .card-body, .topic-based-articles .card:hover .card-footer {
+  border-color: #333F48;
+  cursor: pointer;
+}
+
+.topic-based-articles .card:hover .button-action-solid {
+  width: 40px;
+  height: 40px;
+  background-color: #6DF1E7;
+}
+
+.topic-based-articles .card .card-body {
+  border: 1px solid #E9EEF2;
+  border-bottom: none;
+  padding: 16px;
+}
+
+.topic-based-articles .card a.card-title {
+  color: #333F48;
+  position: relative;
+  text-decoration: none;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(currentColor), to(currentColor));
+  background-image: -webkit-linear-gradient(currentColor, currentColor);
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 1px;
+  -webkit-transition: background-size .3s;
+  transition: background-size .3s;
+}
+
+.topic-based-articles .card .date-published, .topic-based-articles .card .read-time {
+  display: inline;
+}
+
+.topic-based-articles .card .date-published + .read-time:not(:empty):before {
+  content: '•';
+  margin: 0 .25rem;
+}
+
+.topic-based-articles .card .card-footer {
+  padding: 16px;
+  border: 1px solid #E9EEF2;
+  border-top: none;
+  position: relative;
+  height: 50px;
+}
+
+.topic-based-articles .card .card-footer .button-action-solid {
+  bottom: 16px;
+}

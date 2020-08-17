@@ -1,0 +1,26 @@
+/* breakpoints */
+.page-summary-wrapper {
+  position: relative;
+  margin-bottom: 28px;
+}
+
+.page-summary-wrapper .page-summary-title {
+  color: #333F48;
+  font-family: benton-modern-display, serif;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 32px;
+  margin-bottom: 9px;
+}
+
+.page-summary-wrapper .page-summary-content, .page-summary-wrapper .page-summary-content p {
+  color: #333F48;
+  font-family: benton-sans, sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.page-summary-wrapper .page-summary-content p {
+  margin-bottom: 28px;
+}

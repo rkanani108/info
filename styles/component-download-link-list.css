@@ -1,0 +1,194 @@
+/* breakpoints */
+.download-link-list__container {
+  padding-bottom: 7px;
+}
+
+.download-link-list__container ul {
+  margin-bottom: 7px;
+}
+
+.download-link-list__container li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border-bottom: 1px solid #B2B4B2;
+}
+
+.download-link-list__container li a {
+  color: #5C656D;
+  font-family: benton-sans-condensed, sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 500;
+  letter-spacing: 0.33px;
+  position: relative;
+  padding-left: 60px;
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 10px;
+  min-height: 59px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.download-link-list__container li a[data-linktype='download']:before {
+  content: "";
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  background-image: url(../images/download-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 13px;
+  top: 15px;
+  left: 15px;
+  z-index: 9;
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.download-link-list__container li a[data-linktype='download']:after {
+  content: "";
+  background-color: #B4FBF6;
+  position: absolute;
+  top: 15px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  left: 15px;
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.download-link-list__container li a:hover {
+  color: #6DF1E7;
+  text-decoration: none;
+}
+
+.download-link-list__container li a:hover[data-linktype='download']:before {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
+}
+
+.download-link-list__container li a:hover[data-linktype='download']:after {
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
+  -webkit-transform: scale(1.25);
+  -ms-transform: scale(1.25);
+  transform: scale(1.25);
+}
+
+.download-link-list__container .extension {
+  color: #5C656D;
+  font-family: benton-sans-condensed, sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 500;
+  letter-spacing: 0.33px;
+  text-transform: uppercase;
+  position: relative;
+  padding-left: 5px;
+  padding-right: 5px;
+  display: block;
+  margin-top: 5px;
+}
+
+.download-link-list__container .extension:before {
+  content: "(";
+  position: absolute;
+  left: 0;
+  top: -1px;
+}
+
+.download-link-list__container .extension:after {
+  content: ")";
+  position: absolute;
+  right: 0;
+  top: -1px;
+}
+
+.download-link-list__headline {
+  border-top: 4px solid #C8102E;
+  border-bottom: 1px solid #B2B4B2;
+  color: #333F48;
+  font-family: benton-sans-condensed, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 19px;
+  padding-bottom: 5px;
+  padding-left: 7px;
+}
+
+.download-link-list__cta {
+  text-align: center;
+}
+
+.download-link-list__cta a {
+  font-family: benton-sans-condensed, sans-serif;
+  color: #333F48;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.39px;
+  line-height: 18px;
+  position: relative;
+}
+
+.download-link-list__cta a:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  width: 0;
+  bottom: -3px;
+  background: #333F48;
+  height: 2px;
+  -webkit-transition-property: width;
+  transition-property: width;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+.download-link-list__cta a:hover {
+  color: #333F48;
+  text-decoration: none;
+}
+
+.download-link-list__cta a:hover:after {
+  left: 0;
+  right: auto;
+  width: 100%;
+}

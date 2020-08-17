@@ -1,0 +1,398 @@
+/* breakpoints */
+@import url("https://fonts.googleapis.com/css?family=Oswald:400,500|Merriweather:300,400,500");
+/* Spacing between each player (if multiple players exist) or between player and next component */
+.jwplayer.jw-skin-advisory-jw-player {
+  margin-bottom: 30px;
+}
+
+/* Set the idle overlay to transparent white */
+.jwplayer.jw-skin-advisory-jw-player.jw-state-idle .jw-controls {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Add border to accentuate white controls */
+/* Hide titles on complete */
+.jwplayer.jw-skin-advisory-jw-player.jw-state-complete .jw-title .jw-title-primary,
+.jwplayer.jw-skin-advisory-jw-player.jw-state-complete .jw-title .jw-title-secondary {
+  display: none;
+}
+
+/* Round, white play & restart buttons with black icons */
+.jwplayer.jw-skin-advisory-jw-player .jw-display-controls .jw-display-icon-container {
+  background-color: #B4FBF6;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  padding: 20px;
+}
+
+.jwplayer.jw-skin-advisory-jw-player .jw-display-controls .jw-display-icon-container .jw-icon {
+  color: #333F48;
+  width: 60px;
+  height: 60px;
+  padding: 20px;
+}
+
+/* Change re-play and loading button colors on idle state, handle hover transitions */
+.jwplayer.jw-skin-advisory-jw-player .jw-display-controls .jw-display-icon-container .jw-icon {
+  color: #333F48;
+  padding: 2px;
+}
+
+/* Change play button colors on idle state, handle hover transitions */
+.jwplayer.jw-skin-advisory-jw-player.jw-state-idle .jw-display-controls .jw-display-icon-container {
+  background-color: #B4FBF6;
+  height: 60px;
+  width: 60px;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  transition: transform 0.35s, -webkit-transform 0.35s;
+}
+
+.jwplayer.jw-skin-advisory-jw-player.jw-state-idle .jw-display-controls .jw-display-icon-container .jw-icon {
+  color: #333F48;
+  height: 22px;
+  width: 22px;
+  padding: 20px;
+}
+
+/* Shift the play button up on hover */
+.jwplayer.jw-skin-advisory-jw-player.jw-state-idle:hover .jw-display-controls .jw-display-icon-container {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+/* Don't shift the play button on small breakpoint */
+.jwplayer.jw-skin-advisory-jw-player.jw-state-idle.jw-breakpoint-1:hover .jw-display-controls .jw-display-icon-container,
+.jwplayer.jw-skin-advisory-jw-player.jw-state-idle.jw-breakpoint-0:hover .jw-display-controls .jw-display-icon-container {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* Shrink play button on smaller breakpoints */
+.jwplayer.jw-skin-advisory-jw-player.jw-state-idle.jw-breakpoint-3 .jw-display-controls .jw-display-icon-container,
+.jwplayer.jw-skin-advisory-jw-player.jw-state-idle.jw-breakpoint-2 .jw-display-controls .jw-display-icon-container {
+  height: 60px;
+  width: 60px;
+}
+
+.jwplayer.jw-skin-advisory-jw-player.jw-state-idle.jw-breakpoint-1 .jw-display-controls .jw-display-icon-container,
+.jwplayer.jw-skin-advisory-jw-player.jw-state-idle.jw-breakpoint-0 .jw-display-controls .jw-display-icon-container {
+  height: 32px;
+  width: 32px;
+}
+
+.jwplayer.jw-skin-advisory-jw-player.jw-state-idle.jw-breakpoint-3 .jw-display-controls .jw-display-icon-container .jw-icon,
+.jwplayer.jw-skin-advisory-jw-player.jw-state-idle.jw-breakpoint-2 .jw-display-controls .jw-display-icon-container .jw-icon {
+  height: 32px;
+  width: 32px;
+  padding: 0px;
+  margin: 25% auto;
+}
+
+.jwplayer.jw-skin-advisory-jw-player.jw-state-idle.jw-breakpoint-1 .jw-display-controls .jw-display-icon-container .jw-icon,
+.jwplayer.jw-skin-advisory-jw-player.jw-state-idle.jw-breakpoint-0 .jw-display-controls .jw-display-icon-container .jw-icon {
+  height: 20px;
+  width: 20px;
+  padding: 10px;
+}
+
+.jwplayer.jw-skin-advisory-jw-player .jw-display-controls .jw-display-icon-container:hover {
+  background-color: #6DF1E7;
+}
+
+/* Position play icon above title */
+.jwplayer.jw-skin-advisory-jw-player.jw-state-idle .jw-display {
+  height: 100%;
+}
+
+.jwplayer.jw-skin-advisory-jw-player.jw-state-idle.jw-breakpoint-3 .jw-display,
+.jwplayer.jw-skin-advisory-jw-player.jw-state-idle.jw-breakpoint-2 .jw-display,
+.jwplayer.jw-skin-advisory-jw-player.jw-state-idle.jw-breakpoint-1 .jw-display {
+  height: 100%;
+}
+
+.jwplayer.jw-skin-advisory-jw-player.jw-state-idle .jw-display-container {
+  vertical-align: middle;
+}
+
+.jwplayer.jw-skin-advisory-jw-player.jw-state-paused .jw-controls {
+  background-color: rgba(180, 251, 246, 0.2);
+  -webkit-transition: background-color .5s;
+  transition: background-color .5s;
+}
+
+/* Customize font style and positioning for titles */
+.jwplayer.jw-skin-advisory-jw-player.jw-state-idle .jw-title {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/* Enlarge preview image & add shift transitions with class 'slide' (applied on mouseenter) */
+.jwplayer.jw-skin-advisory-jw-player .jw-preview {
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
+}
+
+.jwplayer.jw-skin-advisory-jw-player:hover .jw-preview {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* Don't slide background on complete state */
+/* Apply new styles to video title and description, handle transitions */
+.jwplayer.jw-skin-advisory-jw-player .jw-title-primary {
+  font-size: 48px;
+  padding: 30px;
+  color: #FFFFFF;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  padding-bottom: 15px;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  transition: transform 0.35s, -webkit-transform 0.35s;
+}
+
+.jwplayer.jw-skin-advisory-jw-player .jw-title-secondary {
+  font-size: 18px;
+  max-width: 90%;
+  font-weight: 500;
+  opacity: 0;
+  margin: 0 auto;
+  color: #1e1e1e;
+  text-align: center;
+  font-family: "Merriweather", serif;
+  white-space: normal;
+  line-height: 1.3;
+  -webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
+  transition: opacity 0.2s, -webkit-transform 0.35s;
+  transition: opacity 0.2s, transform 0.35s;
+  transition: opacity 0.2s, transform 0.35s, -webkit-transform 0.35s;
+  -webkit-transition-delay: 0.08s;
+  transition-delay: 0.08s;
+  -webkit-transition-duration: 0.35s;
+  transition-duration: 0.35s;
+}
+
+.jwplayer.jw-skin-advisory-jw-player:hover .jw-title-secondary {
+  opacity: 1;
+}
+
+.jwplayer.jw-skin-advisory-jw-player .jw-title-primary,
+.jwplayer.jw-skin-advisory-jw-player .jw-title-secondary {
+  -webkit-transform: translate3d(0, 50px, 0);
+  transform: translate3d(0, 50px, 0);
+}
+
+/* Don't translate on tiny screens (when the description is hidden) */
+.jwplayer.jw-skin-advisory-jw-player:hover .jw-title-primary,
+.jwplayer.jw-skin-advisory-jw-player:hover .jw-title-secondary {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.jwplayer.jw-skin-advisory-jw-player.jw-breakpoint-1 .jw-title-primary,
+.jwplayer.jw-skin-advisory-jw-player.jw-breakpoint-0 .jw-title-secondary {
+  -webkit-transform: translate3d(0, 10px, 0);
+  transform: translate3d(0, 10px, 0);
+}
+
+/* Decrease font size on medium-small breakpoints */
+.jwplayer.jw-skin-advisory-jw-player.jw-breakpoint-3 .jw-title-primary,
+.jwplayer.jw-skin-advisory-jw-player.jw-breakpoint-2 .jw-title-primary,
+.jwplayer.jw-skin-advisory-jw-player.jw-breakpoint-1 .jw-title-primary,
+.jwplayer.jw-skin-advisory-jw-player.jw-breakpoint-0 .jw-title-primary {
+  font-size: 22px;
+}
+
+.jwplayer.jw-skin-advisory-jw-player.jw-breakpoint-3 .jw-title-secondary,
+.jwplayer.jw-skin-advisory-jw-player.jw-breakpoint-2 .jw-title-secondary {
+  font-size: 14px;
+}
+
+/* Hide the description on smallest breakpoints */
+.jwplayer.jw-skin-advisory-jw-player.jw-breakpoint-1 .jw-title-secondary,
+.jwplayer.jw-skin-advisory-jw-player.jw-breakpoint-0 .jw-title-secondary {
+  display: none;
+}
+
+/* Change colors and remove gradient shadow for control bar, change icon color on pause */
+.jwplayer.jw-skin-advisory-jw-player .jw-display {
+  padding-bottom: 45px;
+}
+
+.jwplayer.jw-skin-advisory-jw-player .jw-controls::after {
+  background: none;
+}
+
+.jwplayer.jw-skin-advisory-jw-player .jw-controlbar {
+  background-color: #333F48;
+  color: #B4FBF6;
+}
+
+.jwplayer.jw-skin-advisory-jw-player .jw-controlbar .jw-button-container .jw-button-color {
+  color: #B4FBF6;
+}
+
+.jwplayer.jw-skin-advisory-jw-player.jw-state-paused .jw-controlbar .jw-button-container .jw-button-color {
+  color: #B4FBF6;
+}
+
+.jwplayer.jw-skin-advisory-jw-player .jw-controlbar .jw-button-container .jw-button-color:hover {
+  color: #FFFFFF;
+}
+
+/* Move tooltips closer to control bar with inline timeslider, change colors, round corners, remove shadow */
+.jwplayer.jw-skin-advisory-jw-player .jw-controlbar .jw-tooltip {
+  bottom: 70%;
+  box-shadow: none;
+}
+
+.jwplayer.jw-skin-advisory-jw-player .jw-controlbar .jw-tooltip.jw-open {
+  border-radius: 5px;
+  color: #333F48;
+}
+
+.jwplayer.jw-skin-advisory-jw-player .jw-controlbar .jw-time-tip:after {
+  background-color: #FFFFFF;
+}
+
+.jwplayer.jw-skin-advisory-jw-player .jw-controlbar .jw-time-tip .jw-text {
+  background-color: #FFFFFF;
+  color: #333F48;
+}
+
+.jwplayer.jw-skin-advisory-jw-player .jw-controlbar .jw-tooltip .jw-text {
+  background-color: #333F48;
+  border-radius: 5px;
+  border: 0;
+}
+
+.jwplayer.jw-skin-advisory-jw-player .jw-controlbar .jw-text {
+  color: #FFFFFF;
+}
+
+.jwplayer.jw-skin-advisory-jw-player .jw-volume-tip,
+.jwplayer.jw-skin-advisory-jw-player .jw-time-tip {
+  padding-bottom: 0;
+}
+
+/* Customize colors of volume control knob */
+.jwplayer.jw-skin-advisory-jw-player .jw-overlay .jw-slider-volume .jw-slider-container .jw-knob {
+  background-color: #B4FBF6;
+}
+
+/* Customize colors of timeslider */
+.jwplayer.jw-skin-advisory-jw-player .jw-controlbar .jw-slider-time .jw-slider-container .jw-rail {
+  background-color: #1e1e1e;
+}
+
+.jwplayer.jw-skin-advisory-jw-player .jw-controlbar .jw-slider-time .jw-slider-container .jw-buffer {
+  background-color: #FFFFFF;
+}
+
+.jwplayer.jw-skin-advisory-jw-player .jw-controlbar .jw-slider-time .jw-slider-container .jw-progress {
+  background-color: #C8102E;
+}
+
+.jwplayer.jw-skin-advisory-jw-player .jw-controlbar .jw-slider-time .jw-slider-container .jw-knob {
+  background-color: #B4FBF6;
+}
+
+/* Customize colors/opacity of the settings menu */
+.jwplayer.jw-skin-advisory-jw-player .jw-settings-menu {
+  background-color: transparent;
+}
+
+.jwplayer.jw-skin-advisory-jw-player .jw-settings-menu .jw-settings-topbar {
+  background-color: #333F48;
+}
+
+.jwplayer.jw-skin-advisory-jw-player .jw-settings-menu .jw-settings-topbar .jw-icon:hover {
+  color: #1e1e1e;
+}
+
+.jwplayer.jw-skin-advisory-jw-player .jw-settings-menu .jw-settings-submenu {
+  background-color: rgba(51, 63, 72, 0.9);
+}
+
+.jwplayer.jw-skin-advisory-jw-player .jw-settings-menu .jw-settings-content-item {
+  color: #FFFFFF;
+}
+
+.jwplayer.jw-skin-advisory-jw-player .jw-settings-menu .jw-settings-content-item:hover,
+.jwplayer.jw-skin-advisory-jw-player .jw-settings-menu .jw-settings-item-active {
+  color: #B4FBF6;
+  font-weight: bold;
+}
+
+.jwplayer.jw-skin-advisory-jw-player .jw-settings-menu .jw-icon.jw-button-color::after {
+  box-shadow: inset 0 -3px 0 -1px #C8102E;
+}
+
+.jwplayer.jw-skin-advisory-jw-player .jw-settings-menu .jw-icon.jw-icon-inline.jw-button-color {
+  color: #B4FBF6;
+}
+
+.jw-related-shelf-container.jw-shelf-widget .jw-related-more {
+  font-family: benton-sans-condensed, sans-serif;
+  color: #333F48;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0 0 5px 58px;
+}
+
+.jw-related-shelf-container.jw-shelf-widget .jw-related-control {
+  background-color: #B4FBF6;
+  width: 48px;
+  height: 48px;
+  border-radius: 50px;
+  margin: auto 0 4.25em 0;
+  opacity: 1;
+}
+
+.jw-related-shelf-container.jw-shelf-widget .jw-related-control svg {
+  display: none;
+}
+
+.jw-related-shelf-container.jw-shelf-widget .jw-related-control:after {
+  content: url("../images/jwplayer-arrow.svg");
+  width: 12px;
+  position: absolute;
+  left: 16px;
+}
+
+.jw-related-shelf-container.jw-shelf-widget .jw-related-control-right:after {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  left: unset;
+  right: 16px;
+}
+
+.jw-related-shelf-container.jw-shelf-widget .jw-related-shelf-contents {
+  padding: 20px 0px;
+}
+
+#advisory-playlist-shelf-widget .jw-related-shelf-item-title {
+  font-size: 12px;
+  color: #5C656D;
+}

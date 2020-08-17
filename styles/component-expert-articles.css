@@ -1,0 +1,22 @@
+/* breakpoints */
+.expert-articles {
+  padding: 72px 0;
+  position: relative;
+}
+
+.expert-articles .shade-7.full-width {
+  background-color: #F4F6F8;
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.expert-articles .headline {
+  margin-bottom: 16px;
+}

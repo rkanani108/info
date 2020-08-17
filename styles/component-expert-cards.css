@@ -1,0 +1,210 @@
+/*
+ * ADVBRD - 1381 Expert Cards
+ *
+ *
+ */
+.expert-cards__heading {
+  font-family: benton-modern-display, serif;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 43px;
+  text-align: center;
+  color: #333F48;
+  margin-top: 30px;
+  padding-top: 29px;
+}
+
+.expert-cards__heading.top-border {
+  border-top: 1px solid #B2B4B2;
+}
+
+.expert-cards__item-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 -12px;
+  margin-top: 55px;
+}
+
+.expert-cards__item-wrapper.repeat-odd-column {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  width: 75%;
+  margin: 55px auto 0;
+}
+
+.expert-cards__item-wrapper.repeat-even-column {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 767px) {
+  .expert-cards__item-wrapper {
+    display: -ms-grid !important;
+    display: grid !important;
+    -ms-grid-columns: (1fr)[1] !important;
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+}
+
+.expert-cards__item {
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-bottom: 15px;
+  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+}
+
+.expert-cards__item:hover {
+  box-shadow: 0px 10px 20px -15px rgba(0, 0, 0, 0.41);
+}
+
+.expert-cards__item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.expert-cards__item a:hover {
+  text-decoration: none;
+}
+
+.expert-cards__item a:hover .expert-cards__image {
+  -webkit-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  transform: scale(1.03);
+}
+
+.expert-cards__item a:hover .expert-cards__cta-btn {
+  background-color: #6DF1E7;
+}
+
+.expert-cards__item a:hover .expert-cards__name span {
+  background-size: 100% 2px;
+}
+
+.expert-cards__image {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 176px;
+  height: 176px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+  /* Animation */
+}
+
+.expert-cards__image img {
+  width: 100%;
+  height: auto;
+}
+
+.expert-cards__label {
+  font-family: benton-sans-condensed, sans-serif;
+  color: #C8102E;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+
+.expert-cards__topics {
+  color: #333F48;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  font-family: benton-sans-condensed, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: auto;
+}
+
+.expert-cards .expert-cards__cta {
+  text-align: center;
+}
+
+.expert-cards__cta-btn {
+  background-color: #B4FBF6;
+  border-radius: 20px;
+  color: #333F48;
+  font-family: benton-sans, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0 15px;
+  height: 32px;
+  line-height: 32px;
+  margin-top: 22px;
+  display: inline-block;
+  text-align: center;
+}
+
+.expert-cards__cta-btn:hover {
+  background-color: #6DF1E7;
+}
+
+.expert-cards__name {
+  font-family: benton-modern-display, serif;
+  font-size: 24px;
+  line-height: 28px;
+  color: #333F48;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.expert-cards__name span {
+  text-decoration: none;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(currentColor), to(currentColor));
+  background-image: -webkit-linear-gradient(currentColor, currentColor);
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  -webkit-transition: background-size .3s;
+  transition: background-size .3s;
+}
+
+.expert-cards__name > div {
+  margin: 0 4px 0 0;
+}
+
+.expert-cards__job-title {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #333F48;
+  font-family: benton-sans-condensed, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+}

@@ -1,0 +1,123 @@
+/* breakpoints */
+@media (min-width: 576px) and (max-width: 767px) {
+  .container {
+    max-width: 100% !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .full-col {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+.component-image-with-caption__headline {
+  color: #333F48;
+  font-family: benton-sans-condensed, sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+  padding-top: 19px;
+  padding-bottom: 15px;
+}
+
+.component-image-with-caption__image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.component-image-with-caption__text {
+  font-family: benton-sans, sans-serif;
+  font-size: 10px;
+  line-height: 14px;
+  letter-spacing: 0.28px;
+  color: #5C656D;
+  margin-top: 8px;
+  margin-bottom: 10px;
+  border-left: 1px solid #ACBAC4;
+  padding-left: 8px;
+}
+
+.component-image-with-caption__cta {
+  margin-top: 14px;
+}
+
+.component-image-with-caption__cta a {
+  color: #333F48;
+  font-family: benton-sans-condensed, sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 600;
+  letter-spacing: 0.33px;
+  position: relative;
+}
+
+.component-image-with-caption__cta a[data-linktype='download'] {
+  padding-left: 22px;
+}
+
+.component-image-with-caption__cta a[data-linktype='download']:before {
+  color: #333F48;
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  background-image: url("../images/download-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 8px;
+  top: 0px;
+  left: 0px;
+  z-index: 9;
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.component-image-with-caption__cta a[data-linktype='download']:after {
+  content: "";
+  background-color: #B4FBF6;
+  position: absolute;
+  top: 0px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  left: 0px;
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.component-image-with-caption__cta a:hover {
+  color: #6DF1E7;
+  text-decoration: none;
+}
+
+.component-image-with-caption__cta a:hover[data-linktype='download']:before {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
+}
+
+.component-image-with-caption__cta a:hover[data-linktype='download']:after {
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
+  -webkit-transform: scale(1.25);
+  -ms-transform: scale(1.25);
+  transform: scale(1.25);
+}

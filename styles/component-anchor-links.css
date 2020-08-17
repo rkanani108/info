@@ -1,0 +1,91 @@
+/* breakpoints */
+.anchor-links {
+  font-size: 16px;
+}
+
+.anchor-links .anchor-links--title {
+  text-transform: uppercase;
+  font-family: benton-sans-condensed, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  padding-left: 25px;
+  color: #333F48;
+  padding-bottom: 11px;
+  margin-bottom: 0;
+  font-size: 16px;
+  border-left: 4px solid #C8102E;
+  padding-top: 17px;
+}
+
+.anchor-links .anchor-links--list {
+  list-style: none;
+  border-left: 4px solid #C8102E;
+  padding-left: 0;
+  padding-top: .1em;
+  width: auto;
+}
+
+.anchor-links .anchor-links--list__item {
+  line-height: 2em;
+  display: block;
+  padding-bottom: 24px;
+}
+
+.anchor-links .anchor-links--list__item:last-child {
+  padding-bottom: 14px;
+}
+
+.anchor-links .anchor-links--list__item a {
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+  display: block;
+  font-family: benton-sans-condensed, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  color: #333F48;
+  font-size: 16px;
+  line-height: 18px;
+  padding-top: 0;
+  padding-bottom: 0;
+  letter-spacing: 0.44px;
+  padding-left: 16px;
+  position: relative;
+}
+
+.anchor-links .anchor-links--list__item a.active {
+  font-weight: 600;
+  margin-left: .6em;
+  color: #C8102E;
+}
+
+.anchor-links .anchor-links--list__item a.active:before {
+  content: "\2022";
+  color: #C8102E;
+  font-weight: bold;
+  display: inline-block;
+  width: .8em;
+  margin-left: -.8em;
+  font-size: 1.4em;
+  position: absolute;
+}
+
+.anchor-links .anchor-links--list__item a:not(.active) {
+  margin-left: 9px;
+}
+
+.anchor-links .anchor-links--list__item a {
+  text-decoration: none;
+}
+
+.anchor-links .anchor-links--list__item a:hover {
+  color: #C8102E;
+  font-weight: bold;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.ab-anchor {
+  position: absolute;
+  top: -150px;
+  height: 0px;
+}

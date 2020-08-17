@@ -1,0 +1,77 @@
+/* breakpoints */
+.article-body-text {
+  font-family: Georgia;
+  font-size: 16px;
+  color: #656565;
+  line-height: 32px;
+  position: relative;
+}
+
+.article-body-text__container {
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+/* breakpoints */
+.article-body-text .drop-cap::first-letter {
+  font-family: benton-modern-display, serif;
+  font-size: 4em;
+  color: #C8102E;
+  margin-right: 10px;
+  margin-top: .2em;
+  line-height: .6em;
+  float: left;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.article-body-text .trailing-slash {
+  margin-bottom: 15px;
+}
+
+.article-body-text .trailing-slash:after {
+  position: absolute;
+  right: auto;
+  bottom: auto;
+  margin-top: 8px;
+  margin-left: 12px;
+  background-image: url("../images/trailing-slash.svg");
+  width: 20px;
+  height: 15px;
+  content: "";
+}
+
+.article-body-text__headline {
+  font-family: benton-modern-display, serif;
+  font-size: 40px;
+  color: #333F48;
+}
+
+.article-body-text__sub-headline {
+  font-family: benton-sans-condensed, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 0;
+  color: #333F48;
+}
+
+.article-body-text__copy {
+  font-size: 16px;
+  color: #5C656D;
+}
+
+.article-body-text__copy p {
+  font-size: 16px;
+  color: #5C656D;
+}
+
+.article-body-text__cta a {
+  font-family: benton-sans-condensed, sans-serif;
+  color: #333F48;
+}
+
+.article-body-text__cta a:hover {
+  color: #333F48;
+  text-decoration: none;
+}
